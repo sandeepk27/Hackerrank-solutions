@@ -19,7 +19,7 @@ ON
      contact.customer_id = customer.id
 
 WHERE (contact.user_account_id, contact.customer_id) IN (
-    SELECT user_account_id, customer_id FROM contact GROUP BY user_account_id, customer_id HAVING count(*) > 1
+     SELECT user_account_id, customer_id FROM contact GROUP BY user_account_id, customer_id HAVING count(*) > 1
 )
 GROUP BY 
-    contact.user_account_id ,contact.customer_id, user_account.first_name, user_account.last_name, customer.customer_name;
+     contact.user_account_id ,contact.customer_id, user_account.first_name, user_account.last_name, customer.customer_name;

@@ -1,4 +1,4 @@
------ customer Spending
+----- customer Spending v1.0
 
 SELECT
      c.customer_name, ROUND(SUM(i.total_price), 6)

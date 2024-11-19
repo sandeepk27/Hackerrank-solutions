@@ -1,6 +1,6 @@
 ---- Products Without Sales v2.0
 SELECT 
-    product.sku, product.product_name
+    product.sku,product.product_name
 FROM 
     product
 WHERE 

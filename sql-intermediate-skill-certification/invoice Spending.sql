@@ -1,4 +1,4 @@
------ invoice Spending
+----- invoice Spending v1.0
 
 SELECT 
       cu.customer_name, AVG(i.total_price)

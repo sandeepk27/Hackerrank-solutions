@@ -3,7 +3,7 @@
 SELECT 
     CI.city_name, 
     PR.product_name, 
-    ROUND(SUM(INV_I.line_total_price), 2) AS tot
+    ROUND(SUM(INV_I.line_total_price), 2) AS total
 FROM 
     city as CI, 
     customer as CU, 
@@ -19,6 +19,6 @@ GROUP BY
     CI.city_name, 
     PR.product_name 
 ORDER BY 
-    tot DESC, 
+    total DESC, 
     CI.city_name, 
     PR.product_name ;

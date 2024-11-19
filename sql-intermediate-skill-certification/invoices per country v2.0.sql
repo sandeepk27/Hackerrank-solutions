@@ -7,6 +7,6 @@ FROM
 WHERE 
        co.id = ci.country_id AND ci.id = cu.city_id AND cu.id = i.customer_id
 GROUP BY 
-        co.country name
+       co.country name
 HAVING 
-        AVG(i.total_price) > (SELECT AVG(total price));
+       AVG(i.total_price) > (SELECT AVG(total price));

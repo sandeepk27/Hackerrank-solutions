@@ -1,6 +1,5 @@
 ---- invoices per country v1.0
 
-
 SELECT 
     co.country_name,
     COUNT(*) AS total_customers,
